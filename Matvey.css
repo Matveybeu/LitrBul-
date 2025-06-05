@@ -1,26 +1,80 @@
-/* Основные настройки */
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Arial', sans-serif; /* Шрифт */
-    background-color: #F0F0F0;       /* Светлый серый фон */
-    color: #333;                     /* Темно-серый цвет текста */
-    margin: 0;                       /* Обнуляем внешние отступы */
-    padding: 20px;                   /* Внутренний отступ от краев окна браузера */
+    font-family: 'Arial', sans-serif;
+    background-color: #1B1B1B;
+    color: white;
 }
 
-/* Оформление заголовков */
-h1 {
-    color: #FF7B00;                  /* Оранжевый цвет заголовка */
-    text-align: center;              /* Центрирование заголовка */
-    font-size: 3em;                  /* Размер шрифта примерно в три раза больше обычного */
+/* Шрифты и цвета */
+.header h1,
+.content h2 {
+    text-align: center;
+    color: #7F00FF;
+    font-size: 3em;
+    letter-spacing: 1px;
 }
 
-/* Простое оформление ссылок */
-a {
-    color: blue;                     /* Цвет ссылки */
-    text-decoration: none;           /* Без подчеркивания */
+.header p {
+    text-align: center;
+    font-style: italic;
+    opacity: 0.8;
 }
 
-a:hover {                            /* Эффект при наведении мыши */
-    color: red;                      /* Меняем цвет на красный */
-    text-decoration: underline;      /* Добавляем подчеркивание */
+/* Структура страницы */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: auto;
+    padding: 30px;
+}
+
+.content img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.content ul {
+    list-style-type: none;
+    padding-left: 50px;
+}
+
+.btn {
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #7F00FF;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    margin: 30px auto;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+
+/* Подвал */
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: black;
+    color: grey;
 }
