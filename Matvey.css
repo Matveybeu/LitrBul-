@@ -9,6 +9,7 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #1B1B1B;
     color: white;
+    padding: 20px;
 }
 
 /* Шрифты и цвета */
@@ -18,35 +19,35 @@ body {
     color: #7F00FF;
     font-size: 3em;
     letter-spacing: 1px;
+    margin-bottom: 20px;
 }
 
 .header p {
     text-align: center;
     font-style: italic;
     opacity: 0.8;
+    margin-bottom: 30px;
 }
 
-/* Структура страницы */
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 960px;
-    margin: auto;
-    padding: 30px;
-}
-
-.content img {
-    float: left;
-    margin-right: 20px;
+/* Секции контента */
+.content section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #2A2A2A;
     border-radius: 10px;
 }
 
-.content ul {
-    list-style-type: none;
-    padding-left: 50px;
+/* Списки */
+ul, ol {
+    padding-left: 30px;
+    line-height: 1.6;
 }
 
+li {
+    margin-bottom: 10px;
+}
+
+/* Кнопка */
 .btn {
     display: block;
     width: 200px;
@@ -74,7 +75,4 @@ body {
     bottom: 0;
     width: 100%;
     text-align: center;
-    padding: 10px 0;
-    background-color: black;
-    color: grey;
-}
+    padding: 20px
